@@ -16,4 +16,5 @@ Hola esta es una advertencia
 
 Imagen de prueba
 
-image::test.png[]
+.Un atardecer bien aca
+image::test.png[200]
