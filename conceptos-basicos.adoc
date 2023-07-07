@@ -17,4 +17,7 @@ Hola esta es una advertencia
 Imagen de prueba
 
 .Un atardecer bien aca
-image::test.png[50,50]
+image::test.png[90,90]
+
+
+Wow mira este atardecer: image:test.png[50,50], muy bonito.
