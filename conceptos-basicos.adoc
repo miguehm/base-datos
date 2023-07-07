@@ -7,8 +7,11 @@
 include::test.cpp[]
 ----
 
-[NOTE]
+[WARNING]
 ====
-Hola esta es una nota
+
+Hola esta es una advertencia
 
 ====
+
+image::sunset.jpg[]
