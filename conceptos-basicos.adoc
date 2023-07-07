@@ -16,4 +16,4 @@ Hola esta es una advertencia
 
 Imagen de prueba
 
-image::sunset.jpg[]
+image::test.png[]
