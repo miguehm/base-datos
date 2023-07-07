@@ -6,3 +6,9 @@
 ----
 include::test.cpp[]
 ----
+
+[NOTE]
+====
+Hola esta es una nota
+
+====
