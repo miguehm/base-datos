@@ -3,4 +3,6 @@
 == Crear una base de datos
 
 [source,c]
+----
 include::test.cpp[]
+----
