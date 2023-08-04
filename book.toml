@@ -11,4 +11,3 @@ level = 1
 
 [output.html]
 mathjax-support = true
-
