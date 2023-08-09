@@ -52,3 +52,10 @@ Permite el almacenamiento, modificación y extracción de la información en una
 <!-- #Pendiente que es diccionario de bases de datos? -->
 
 La base de datos se acompaña con un diccionario de datos
+
+## Roles
+
+- Administrador: Define el esquema de datos (tipo, formato, características...), decide que se almacena y como, ademas define la estructura de almacenamiento y los metidos de acceso. Decide como recuperar la información, modifica el esquema y la organización física y hace la concesión de permisos y privilegios para el acceso a los datos, asigna prioridades, claves de usuarios y especifica los restricciones de integridad.
+- Diseñador de BD: Realiza el diseño lógico de la BD, conoce la empresa, reglas, datos, relaciona con los usuarios para el desarrollo del diseño de la BD.
+- Programador de aplicaciones: Escribe programas para manipular la BD escritos en lenguajes de alto nivel y SQL.
+- Otros usuarios: Escriben BD especializadas, interactúan con la BD usando SQL como principal lenguaje de manipulación de datos o simplemente interactúan a través de aplicaciones creadas por programadores (usuario final).
