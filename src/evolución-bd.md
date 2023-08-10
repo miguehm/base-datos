@@ -45,15 +45,35 @@ Es una serie de recursos para manejar grandes volúmenes de información (Bases 
 
 Permite el almacenamiento, modificación y extracción de la información en una base de datos de forma eficiente, simultanea, redice la redundancia y los cambios no requieren cambios en el modelo de los datos. También mantiene los datos íntegros, protegiendo los datos contra perdidas de información y restringiendo los acceso no autorizados.
 
-<!-- # Pendiente que es LDM y LDD -->
+### LDD
+
+El LDD o DDL (Data Definition Language, en inglés) es un lenguaje proporcionado por el sistema de gestión de base de datos (SGBD) que permite a los usuarios **definir y modificar** las estructuras que almacenarán los datos y los procedimientos o funciones que permitan consultarlos. Esencialmente, se encarga de la creación, modificación y eliminación de la estructura de los objetos de la base de datos.
+
+Las sentencias en SQL para LDD son `CREATE`, `DROP`, `ALTER`.
+
+### LMD
+
+LMD se utiliza para **manipular los datos** dentro de esta estructura permitiendo al usuario consultar, insertar, modificar y eliminar los datos dentro de las tablas de la base de datos.
+
+Las sentencias en SQL para LMD son `SELECT`, `INSERT`, `UPDATE` y `DELETE`.
 
 ## Diccionario de Datos
 
-<!-- #Pendiente que es diccionario de bases de datos? -->
+El diccionario de datos enlista de manera organizada los nombres, definiciones y características de cada uno de los campos o atributos de una base de datos o conjunto de datos.
 
-La base de datos se acompaña con un diccionario de datos
+Un diccionario de datos puede incluir varios elementos esenciales que proporcionan una visión global de la estructura y las características de un conjunto de datos:
 
-## Roles
+- Nombres de los campos de datos: Enumera los nombres o etiquetas asignados a cada campo de datos o columna del conjunto de datos.
+- Tipos de datos: Describen la naturaleza de los datos dentro de cada campo, como numérico, texto, fecha o booleano.
+- Descripciones de los campos: Proporcionan explicaciones claras y concisas de los campos de datos, ofreciendo un contexto adicional.
+- Tamaño de los campos y restricciones: Define las limitaciones y restricciones de tamaño asociadas a cada campo de datos, como límites de caracteres, rangos de valores permitidos o formatos requeridos.
+- Relaciones y dependencias: En los casos en que los conjuntos de datos están interconectados, los diccionarios de datos pueden incluir información sobre relaciones y dependencias entre distintos campos o tablas.
+- Reglas de negocio y validaciones: Especifican las reglas de negocio y las validaciones aplicadas a cada campo de datos.
+- Metadatos: Proporcionan información adicional sobre el conjunto de datos en su conjunto, como la fecha de creación, el autor, la fuente de datos y los detalles pertinentes sobre las versiones.
+
+El objetivo principal de un diccionario de datos es proporcionar un lenguaje común entre el autor de los datos y sus posibles usuarios, facilitando la comprensión y el uso de los datos.
+
+## Roles 
 
 - Administrador: Define el esquema de datos (tipo, formato, características...), decide que se almacena y como, ademas define la estructura de almacenamiento y los metidos de acceso. Decide como recuperar la información, modifica el esquema y la organización física y hace la concesión de permisos y privilegios para el acceso a los datos, asigna prioridades, claves de usuarios y especifica los restricciones de integridad.
 - Diseñador de BD: Realiza el diseño lógico de la BD, conoce la empresa, reglas, datos, relaciona con los usuarios para el desarrollo del diseño de la BD.
