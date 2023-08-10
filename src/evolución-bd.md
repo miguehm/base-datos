@@ -1,5 +1,7 @@
 # Introducción
 
+<!-- toc -->
+
 ## Definición
 
 - Información: Datos que pueden ser **relacionados entre si** con un fin común y de forma mas o menos coherente.
