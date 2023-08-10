@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Información de la Materia - base-datos</title>
+        <title>Introducción - base-datos</title>
 
 
         <!-- Custom HTML head -->
@@ -85,7 +85,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="info.html" class="active"><strong aria-hidden="true">1.</strong> Información de la Materia</a></li><li class="chapter-item expanded "><a href="evolución-bd.html"><strong aria-hidden="true">2.</strong> Introducción</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="info.html"><strong aria-hidden="true">1.</strong> Información de la Materia</a></li><li class="chapter-item expanded "><a href="evolución-bd.html" class="active"><strong aria-hidden="true">2.</strong> Introducción</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -168,21 +168,96 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="información"><a class="header" href="#información">Información</a></h1>
-<div class="table-wrapper"><table><thead><tr><th>Trabajo</th><th>Porcentaje</th></tr></thead><tbody>
-<tr><td>Proyecto</td><td>40%</td></tr>
-<tr><td>Practicas</td><td>30%</td></tr>
-<tr><td>Exposición y practicas</td><td>30%</td></tr>
-</tbody></table>
-</div>
+                        <h1 id="introducción"><a class="header" href="#introducción">Introducción</a></h1>
+<h2 id="definición"><a class="header" href="#definición">Definición</a></h2>
+<ul>
+<li>Información: Datos que pueden ser <strong>relacionados entre si</strong> con un fin común y de forma mas o menos coherente.</li>
+</ul>
+<h2 id="objetivo"><a class="header" href="#objetivo">Objetivo</a></h2>
+<p>Tomar decisiones importantes en base a esa información.</p>
+<h2 id="historia"><a class="header" href="#historia">Historia</a></h2>
+<p>Las primeras bases de datos <strong>basada en procesos</strong> presentaban ambigüedades y contradicciones debido a la dificultad de acceso simultáneo. Posteriormente se estandarizo a un <strong>modelo relacional</strong> para representar los datos.</p>
+<h1 id="sistemas-de-información-orientados-a-los-datos"><a class="header" href="#sistemas-de-información-orientados-a-los-datos">Sistemas de Información Orientados a los Datos</a></h1>
+<ul>
+<li>Los datos se centralizan en un a BD común a todas las las aplicaciones: Evita incoherencias.</li>
+<li>Los datos se almacenan en una única estructura lógica basado en tablas.</li>
+<li>Todos los datos son comunes.</li>
+</ul>
+<p>Se crearon <strong>sistemas gestores de datos</strong>, suministra un lenguaje que permita consultar la base de datos sin necesidad de crear un programa para cada consulta.</p>
+<h2 id="ventajas"><a class="header" href="#ventajas">Ventajas</a></h2>
+<ul>
+<li>Los datos pueden repartirse en múltiples tablas, ficheros o bases de datos.</li>
+<li>Da una visión uniforme de los datos.</li>
+</ul>
+<h2 id="acceso-concurrente"><a class="header" href="#acceso-concurrente">Acceso Concurrente</a></h2>
+<p>El sistema gestor de datos está preparado para responder ante situaciones que provoquen ambigüedades.</p>
+<p>Ejemplo: Eliminar un registro y posteriormente modificarlo.</p>
+<h2 id="seguridad"><a class="header" href="#seguridad">Seguridad</a></h2>
+<p>Se asignan una serie de prioridades a cada usuario par acceder a un dato.</p>
+<h2 id="integridad-de-los-datos"><a class="header" href="#integridad-de-los-datos">Integridad de los datos</a></h2>
+<p>Deben de tener tipos de datos válidos y coherentes acorde a lo que se pretende hacer con ellos.</p>
+<h1 id="sistema-gestor-de-bd"><a class="header" href="#sistema-gestor-de-bd">Sistema Gestor de BD</a></h1>
+<p>Es una serie de recursos para manejar grandes volúmenes de información (Bases de Datos), actuando como un intermediario entre el usuario y los datos.</p>
+<p>Permite el almacenamiento, modificación y extracción de la información en una base de datos de forma eficiente, simultanea, redice la redundancia y los cambios no requieren cambios en el modelo de los datos. También mantiene los datos íntegros, protegiendo los datos contra perdidas de información y restringiendo los acceso no autorizados.</p>
+<h3 id="ldd"><a class="header" href="#ldd">LDD</a></h3>
+<p>El LDD o DDL (Data Definition Language, en inglés) es un lenguaje proporcionado por el sistema de gestión de base de datos (SGBD) que permite a los usuarios <strong>definir y modificar las estructuras que almacenarán los datos</strong> y los procedimientos o funciones que permitan consultarlos. Esencialmente, se encarga de la creación, modificación y eliminación de la estructura de los objetos de la base de datos.</p>
+<p>Las sentencias en SQL para LDD son <code>CREATE</code>, <code>DROP</code>, <code>ALTER</code>.</p>
+<h3 id="lmd"><a class="header" href="#lmd">LMD</a></h3>
+<p>LMD se utiliza para <strong>manipular los datos</strong> dentro de esta estructura permitiendo al usuario consultar, insertar, modificar y eliminar los datos dentro de las tablas de la base de datos.</p>
+<p>Las sentencias en SQL para LMD son <code>SELECT</code>, <code>INSERT</code>, <code>UPDATE</code> y <code>DELETE</code>.</p>
+<h2 id="diccionario-de-datos"><a class="header" href="#diccionario-de-datos">Diccionario de Datos</a></h2>
+<p>El diccionario de datos enlista de manera organizada los nombres, definiciones y características de cada uno de los campos o atributos de una base de datos o conjunto de datos.</p>
+<p>Un diccionario de datos puede incluir varios elementos esenciales que proporcionan una visión global de la estructura y las características de un conjunto de datos:</p>
+<ul>
+<li>Nombres de los campos de datos: Enumera los nombres o etiquetas asignados a cada campo de datos o columna del conjunto de datos.</li>
+<li>Tipos de datos: Describen la naturaleza de los datos dentro de cada campo, como numérico, texto, fecha o booleano.</li>
+<li>Descripciones de los campos: Proporcionan explicaciones claras y concisas de los campos de datos, ofreciendo un contexto adicional.</li>
+<li>Tamaño de los campos y restricciones: Define las limitaciones y restricciones de tamaño asociadas a cada campo de datos, como límites de caracteres, rangos de valores permitidos o formatos requeridos.</li>
+<li>Relaciones y dependencias: En los casos en que los conjuntos de datos están interconectados, los diccionarios de datos pueden incluir información sobre relaciones y dependencias entre distintos campos o tablas.</li>
+<li>Reglas de negocio y validaciones: Especifican las reglas de negocio y las validaciones aplicadas a cada campo de datos.</li>
+<li>Metadatos: Proporcionan información adicional sobre el conjunto de datos en su conjunto, como la fecha de creación, el autor, la fuente de datos y los detalles pertinentes sobre las versiones.</li>
+</ul>
+<p>El objetivo principal de un diccionario de datos es proporcionar un lenguaje común entre el autor de los datos y sus posibles usuarios, facilitando la comprensión y el uso de los datos.</p>
+<h2 id="roles"><a class="header" href="#roles">Roles</a></h2>
+<ul>
+<li><strong>Administrador</strong> 
+<ul>
+<li>Define el esquema de datos (tipo, formato, características...).</li>
+<li>Decide que se almacena y como.</li>
+<li>Define la estructura de almacenamiento y los métodos de acceso.</li>
+<li>Decide como recuperar la información.</li>
+<li>Modifica el esquema y la organización física y hace la concesión de permisos y privilegios para el acceso a los datos.</li>
+<li>Asigna prioridades, claves de usuarios y especifica los restricciones de integridad.</li>
+</ul>
+</li>
+<li><strong>Diseñador de BD</strong> 
+<ul>
+<li>Realiza el diseño lógico de la BD.</li>
+<li>Conoce la empresa, reglas, datos y relaciona con los usuarios para el desarrollo del diseño de la BD.</li>
+</ul>
+</li>
+<li><strong>Programador de aplicaciones</strong> 
+<ul>
+<li>Escribe programas para manipular la BD escritos en lenguajes de alto nivel y SQL.</li>
+</ul>
+</li>
+<li><strong>Otros usuarios</strong> 
+<ul>
+<li>Escriben BD especializadas.</li>
+<li>Interactúan con la BD usando SQL como principal lenguaje de manipulación de datos.</li>
+<li>Simplemente interactúan a través de aplicaciones creadas por programadores (usuario final).</li>
+</ul>
+</li>
+</ul>
+
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-
-                            <a rel="next" href="evolución-bd.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                                <i class="fa fa-angle-right"></i>
+                            <a rel="prev" href="info.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
                             </a>
+
 
                         <div style="clear: both"></div>
                     </nav>
@@ -190,10 +265,10 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-
-                    <a rel="next" href="evolución-bd.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                        <i class="fa fa-angle-right"></i>
+                    <a rel="prev" href="info.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
                     </a>
+
             </nav>
 
         </div>

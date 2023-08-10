@@ -41,13 +41,13 @@ Deben de tener tipos de datos válidos y coherentes acorde a lo que se pretende 
 
 # Sistema Gestor de BD
 
-Es una serie de recursos para manejar grandes volúmenes de información (Bases de Datos). Actuando como un intermediario entre el usuario y los datos.
+Es una serie de recursos para manejar grandes volúmenes de información (Bases de Datos), actuando como un intermediario entre el usuario y los datos.
 
 Permite el almacenamiento, modificación y extracción de la información en una base de datos de forma eficiente, simultanea, redice la redundancia y los cambios no requieren cambios en el modelo de los datos. También mantiene los datos íntegros, protegiendo los datos contra perdidas de información y restringiendo los acceso no autorizados.
 
 ### LDD
 
-El LDD o DDL (Data Definition Language, en inglés) es un lenguaje proporcionado por el sistema de gestión de base de datos (SGBD) que permite a los usuarios **definir y modificar** las estructuras que almacenarán los datos y los procedimientos o funciones que permitan consultarlos. Esencialmente, se encarga de la creación, modificación y eliminación de la estructura de los objetos de la base de datos.
+El LDD o DDL (Data Definition Language, en inglés) es un lenguaje proporcionado por el sistema de gestión de base de datos (SGBD) que permite a los usuarios **definir y modificar las estructuras que almacenarán los datos** y los procedimientos o funciones que permitan consultarlos. Esencialmente, se encarga de la creación, modificación y eliminación de la estructura de los objetos de la base de datos.
 
 Las sentencias en SQL para LDD son `CREATE`, `DROP`, `ALTER`.
 
@@ -75,7 +75,19 @@ El objetivo principal de un diccionario de datos es proporcionar un lenguaje com
 
 ## Roles 
 
-- Administrador: Define el esquema de datos (tipo, formato, características...), decide que se almacena y como, ademas define la estructura de almacenamiento y los metidos de acceso. Decide como recuperar la información, modifica el esquema y la organización física y hace la concesión de permisos y privilegios para el acceso a los datos, asigna prioridades, claves de usuarios y especifica los restricciones de integridad.
-- Diseñador de BD: Realiza el diseño lógico de la BD, conoce la empresa, reglas, datos, relaciona con los usuarios para el desarrollo del diseño de la BD.
-- Programador de aplicaciones: Escribe programas para manipular la BD escritos en lenguajes de alto nivel y SQL.
-- Otros usuarios: Escriben BD especializadas, interactúan con la BD usando SQL como principal lenguaje de manipulación de datos o simplemente interactúan a través de aplicaciones creadas por programadores (usuario final).
+- **Administrador** 
+    - Define el esquema de datos (tipo, formato, características...).
+    - Decide que se almacena y como.
+    - Define la estructura de almacenamiento y los métodos de acceso.
+    - Decide como recuperar la información.
+    - Modifica el esquema y la organización física y hace la concesión de permisos y privilegios para el acceso a los datos.
+    - Asigna prioridades, claves de usuarios y especifica los restricciones de integridad.
+- **Diseñador de BD** 
+    - Realiza el diseño lógico de la BD.
+    - Conoce la empresa, reglas, datos y relaciona con los usuarios para el desarrollo del diseño de la BD.
+- **Programador de aplicaciones** 
+    - Escribe programas para manipular la BD escritos en lenguajes de alto nivel y SQL.
+- **Otros usuarios** 
+    - Escriben BD especializadas.
+    - Interactúan con la BD usando SQL como principal lenguaje de manipulación de datos.
+    - Simplemente interactúan a través de aplicaciones creadas por programadores (usuario final).
