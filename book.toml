@@ -11,3 +11,7 @@ level = 1
 
 [output.html]
 mathjax-support = true
+
+[preprocessor.toc]
+command = "mdbook-toc"
+renderer = ["html"]
