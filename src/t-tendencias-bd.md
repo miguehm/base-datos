@@ -82,19 +82,18 @@ Por ejemplo, una base de datos que almacena valores cifrados, esta base de datos
 
 En las soluciones tradicionales de almacenamiento y computación en la nube, los clientes tienen que confiar en que el proveedor de servicios almacene y gestione sus datos de forma adecuada, por ejemplo, que no los comparta con terceros sin el consentimiento del cliente. Microsoft SEAL sustituye esta confianza por criptografía de última generación, lo que permite a los servicios en la nube proporcionar tanto almacenamiento cifrado como capacidades de computación, al tiempo que garantiza que los datos de sus clientes nunca estarán expuestos a nadie sin cifrar
 
-Se basa en funciones logicas
+Se basa en funciones lógicas
 
 ## Casos de Uso
 
-- Microsoft SEAL: Es una biblioteca de criptografía homomórfica de código abierto desarrollada por Microsoft. Permite realizar operaciones homomórficas en datos cifrados utilizando una API utilizando diferentes esquemas de cifrado homomórfico. Puede ser utilizado para implementar características de cifrado homomórfico en bases de datos.
+- Microsoft SEAL: Es una biblioteca de criptografía homomórfica de código abierto desarrollada por Microsoft. Permite realizar operaciones homomórficas en datos cifrados utilizando diferentes esquemas de cifrado homomórfico. Puede ser utilizado para implementar características de cifrado homomórfico en bases de datos.
 - PALISADE: Es otra biblioteca de cifrado homomórfico de código abierto que proporciona una implementación eficiente de esquemas de cifrado homomórfico. También se puede utilizar para agregar capacidades de cifrado homomórfico a una base de datos.
-- Pysyft: 
 
 ## Ventajas
 
 - Garantiza la seguridad de los datos
 - Eficiente en encriptaciones parciales
-- Al basarse en la criptografía de reticulos se considera resistente a ataques post cuanticos.
+- Al basarse en la criptografía de retículos se considera resistente a ataques post-cuánticos.
 
 ## Desventajas
 
@@ -102,4 +101,4 @@ Se basa en funciones logicas
 - Las claves y los textos cifrados son de gran tamaño.
 - Consume muchos recursos y es lento, produciendo latencia.
 
-Craig Gentry 2008 primer modelo viable basandose en criptografía de reticulos.
+Craig Gentry 2008 primer modelo viable basándose en criptografía de retículos.
