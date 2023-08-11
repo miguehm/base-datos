@@ -28,6 +28,14 @@ Cada uno de estos servicios tiene sus propios pros y contras, por lo que la elec
 
 # Bases de datos NoSQL 
 
+## Introducción
+
+## características
+
+## Casos de Uso
+
+## Ventajas y Desventajas
+
 Las bases de datos NoSQL son un tipo de sistema de gestión de bases de datos que proporciona un mecanismo para almacenar y recuperar datos modelados de formas distintas a las tablas relacionales utilizadas en las bases de datos SQL. Los datos en las bases de datos NoSQL pueden ser almacenados en varios formatos, incluyendo modelos de valor clave, documentos, columnas anchas y grafos.
 
 Aquí tienes algunos ejemplos de bases de datos NoSQL:
@@ -62,11 +70,36 @@ Aquí tienes algunos ejemplos de bases de datos de series cronológicas:
 
 Estos son solo algunos ejemplos de bases de datos de series cronológicas disponibles. Cada una tiene sus propias características y fortalezas, por lo que es importante evaluar tus necesidades específicas antes de elegir una base de datos para tu proyecto de series de tiempo.
 
-# Cifrado homomórfico 
+# Cifrado Homomórfico 
+
+## Introducción
 
 Esta técnica permite tomar decisiones y responder consultas sobre datos cifrados sin descifrarlos, lo que simplifica enormemente la seguridad en la nube y el intercambio de datos.
 
+## Características
+
 Por ejemplo, una base de datos que almacena valores cifrados, esta base de datos permite realizar operaciones matemáticas con esos datos cifrados y obtener un resultado cifrado que puede ser descifrado para obtener la respuesta correcta
 
-- Microsoft SEAL: Es una biblioteca de criptografía homomórfica de código abierto desarrollada por Microsoft. Permite realizar operaciones homomórficas en datos cifrados utilizando diferentes esquemas de cifrado homomórfico. Puede ser utilizado para implementar características de cifrado homomórfico en bases de datos.
+En las soluciones tradicionales de almacenamiento y computación en la nube, los clientes tienen que confiar en que el proveedor de servicios almacene y gestione sus datos de forma adecuada, por ejemplo, que no los comparta con terceros sin el consentimiento del cliente. Microsoft SEAL sustituye esta confianza por criptografía de última generación, lo que permite a los servicios en la nube proporcionar tanto almacenamiento cifrado como capacidades de computación, al tiempo que garantiza que los datos de sus clientes nunca estarán expuestos a nadie sin cifrar
+
+Se basa en funciones logicas
+
+## Casos de Uso
+
+- Microsoft SEAL: Es una biblioteca de criptografía homomórfica de código abierto desarrollada por Microsoft. Permite realizar operaciones homomórficas en datos cifrados utilizando una API utilizando diferentes esquemas de cifrado homomórfico. Puede ser utilizado para implementar características de cifrado homomórfico en bases de datos.
 - PALISADE: Es otra biblioteca de cifrado homomórfico de código abierto que proporciona una implementación eficiente de esquemas de cifrado homomórfico. También se puede utilizar para agregar capacidades de cifrado homomórfico a una base de datos.
+- Pysyft: 
+
+## Ventajas
+
+- Garantiza la seguridad de los datos
+- Eficiente en encriptaciones parciales
+- Al basarse en la criptografía de reticulos se considera resistente a ataques post cuanticos.
+
+## Desventajas
+
+- Muy costoso de implementar y muy lento en encriptaciones completas.
+- Las claves y los textos cifrados son de gran tamaño.
+- Consume muchos recursos y es lento, produciendo latencia.
+
+Craig Gentry 2008 primer modelo viable basandose en criptografía de reticulos.
