@@ -4,11 +4,17 @@
 
 Almacenamiento de historial clínico en físico.
 
+---
+
 ## Requerimientos
 
 - Respaldo digital de la información.
 - expediente clínico.
-- evitar el extravío y/o duplicación de la información.
+- Evitar el extravío y/o duplicación de la información.
+
+Método de Almacenamiento: Por registros.
+
+---
 
 ## Datos a Solicitar
 
@@ -30,9 +36,10 @@ Almacenamiento de historial clínico en físico.
 - Pulsaciones por Minuto
 - Oxigenación
 
-
-Método de Almacenamiento: Por registros.
+---
 
 ## Posible Interfaz
 
 ![](./images/MichalCarried94.png) 
+
+---
