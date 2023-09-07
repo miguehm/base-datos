@@ -46,3 +46,11 @@ FechaEntrega | Cadena | 6 | No | Compuesto |
 Periodo | Cadena | 6 | No | Compuesto | 
 Usuario | Cadena | 40 | No | Compuesto | 
 LibroId | Entero | - | No | Simple | 
+
+## Entidad Categoría
+
+Atributo | Tipo de dato | Longitud | Tipo de Dato | Nulo | Compuesto | Restricciones 
+--|--|--|--|--|--|--
+Id | Cadena | 10 | No | Simple | Llave Primaria 
+Nombre | Cadena | 20 | No | Simple |
+Descripcion | Cadena | 20 | Si | Simple |
